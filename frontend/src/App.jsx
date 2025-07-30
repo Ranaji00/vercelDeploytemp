@@ -17,7 +17,6 @@ import SearchBar from "./components/SearchBar";
 import { useState } from "react";
 
 const App = () => {
-    const [openSearch, setsearch] = useState(false);
 
   return (<>
   

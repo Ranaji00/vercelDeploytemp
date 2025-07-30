@@ -74,7 +74,8 @@ const PlaceOrder = () => {
         case "cod":
           {
             const res = await axios.post(
-              backendUrl + "/api/order/place",
+              // backendUrl + "/api/order/place",
+              `${backendUrl}/api/order/place`,
               orderData,
               { headers: { token } }
             );
@@ -91,7 +92,9 @@ const PlaceOrder = () => {
         case "stripe":
           {
             const responseStripe = await axios.post(
-              backendUrl + "/api/order/stripe",
+              // backendUrl + "/api/order/stripe",
+              `${backendUrl}/api/order/stripe`,
+              
               orderData,
               { headers: { token } }
             );
