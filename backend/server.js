@@ -15,8 +15,8 @@ const port = process.env.PORT || 5000;
 
 // // ✅ Configure CORS
 const allowedOrigins = [
-  'https://vercel-admin-puce.vercel.app',
-  'https://vercel-frontend-six-silk.vercel.app', // your frontend
+  'https://vercel-admin.vercel.app',
+  'https://vercel-frontend.vercel.app', // your frontend
   "http://localhost:5173"
   ,'http://localhost:5175/' // dev frontend
 ];
