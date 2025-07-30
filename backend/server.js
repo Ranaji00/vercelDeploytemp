@@ -22,11 +22,11 @@ const port = process.env.PORT || 5000;
 //   ,'http://localhost:5175/' // dev frontend
 // ];
 
-// app.use(cors({
-//   origin: 'https://vercel-frontend-eta-sandy.vercel.app',
-//   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-//   credentials: true,
-// }));
+app.use(cors({
+  origin: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true,
+}));
 
 app.use(express.json());
 
