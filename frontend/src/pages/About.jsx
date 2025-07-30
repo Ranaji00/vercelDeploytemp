@@ -1,6 +1,7 @@
 import Title from "../components/Title";
 
-import { assets } from "../assets/assets";
+// import { assets } from "../assets/assets";
+import Aboutimg from '../assets/techimg.webp'
 import NewsletterBox from "../components/NewsletterBox";
 
 const About = () => {
@@ -12,8 +13,8 @@ const About = () => {
 
       <div className="my-10 flex flex-col md:flex-row gap-16">
         <img
-          src={assets.about_img}
-          className="w-full md:max-w-[450px]"
+          src={Aboutimg}
+          className="w-full object-cover h-[32rem] md:max-w-[450px]"
           alt=""
         />
         <div className="flex flex-col justify-center gap-6 md:w-2/4 text-gray-600">

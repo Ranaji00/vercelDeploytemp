@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="font-bold text-2xl">
 
           {/* naye fonts add karne hai  */}
-          BELLO<span className="text-blue-800">CART</span>
+         <span>BYTE</span><span className="text-blue-800">CART</span>
 
 
 
@@ -98,6 +98,7 @@ const Navbar = () => {
             {getCartCount()}
           </p>
         </Link>
+
         <img
           src={assets.menu_icon}
           className="w-5 cursor-pointer sm:hidden"
@@ -112,7 +113,7 @@ const Navbar = () => {
           visible ? "translate-x" : "translate-x-full"
         }`}
       >
-        <div className="flex  index-20 flex-col top-0 right-0 w-96 h-screen  bg-[#054895] text-2xl font-thin text-zinc-100">
+        <div className={`flex ${ visible ? "block" : "hidden"} index-20 flex-col top-0 right-0 w-96 h-screen  bg-[#054895] text-2xl font-thin text-zinc-100`}>
           <div
             onClick={() => setVisible(false)}
             className="flex items-center gap-4 p-3 cursor-pointer"
@@ -123,34 +124,34 @@ const Navbar = () => {
 
           <div className="flex flex-col text-3xl font-thin">
 
-          <NavLink
+          <Link
             onClick={() => setVisible(false)}
             to={"/"}
-            className="py-2 pl-6 border"
+            className="py-2   pl-6 border"
           >
             HOME
-          </NavLink>
-          <NavLink
+          </Link>
+          <Link
             onClick={() => setVisible(false)}
             to={"/collection"}
             className="py-2 pl-6 border"
           >
             COLLECTION
-          </NavLink>
-          <NavLink
+          </Link>
+          <Link
             onClick={() => setVisible(false)}
             to={"/about"}
             className="py-2 pl-6 border"
           >
             ABOUT
-          </NavLink>
-          <NavLink
+          </Link>
+          <Link
             onClick={() => setVisible(false)}
             to={"/contact"}
             className="py-2 pl-6 border"
           >
             CONTACT
-          </NavLink>
+          </Link>
 
 
 

@@ -220,7 +220,7 @@ const Collection = () => {
         </div>
 
         {/* MAP PRODUCTS */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-6">
+        <div className="grid mb-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-6">
           {filterProducts.map((item, i) => (
             <ProductItem
             key={i}

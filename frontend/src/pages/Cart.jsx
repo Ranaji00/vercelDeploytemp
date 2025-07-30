@@ -39,7 +39,7 @@ const Cart = () => {
 
           return (
             <div
-              className="py-4 px-6 border-t border-b text-gray-700 grid grid-cols-[4fr_0.5fr_0.5fr] sm:grid-cols-[4fr_2fr_0.5fr] items-center gap-4"
+              className=" py-6 md:py-4 px-6 border-t border-b text-gray-700 grid grid-cols-[4fr_0.5fr_0.5fr] sm:grid-cols-[4fr_2fr_0.5fr] items-center gap-4"
               key={i}
             >
               <div className="flex items-start gap-6">
@@ -96,12 +96,13 @@ const Cart = () => {
         })}
       </div>
 
-      <div className="flex justify-end my-20">
-        <div className="w-full sm:w-[450px]">
+      <div className="flex justify-end mt-20">
+
+        <div className="w-full px-10 md:px-0 sm:w-[450px]">
           <CartTotal />
           <div className="w-full text-end">
             <button
-              className="bg-black text-white text-sm my-8 px-8 py-3"
+              className="bg-black text-white text-xs md:text-sm my-8 px-4 md:px-8 py-3"
               onClick={() => navigate("/place-order")}
             >
               PROCEED TO CHECKOUT
