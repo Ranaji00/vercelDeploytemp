@@ -11,21 +11,22 @@ import orderRouter from "./routes/orderRoute.js";
 dotenv.config();
 
 const app = express();
+app.use(cors());
 const port = process.env.PORT || 5000;
 
 // // ✅ Configure CORS
-const allowedOrigins = [
-  'https://vercel-admin.vercel.app',
-  'https://vercel-frontend.vercel.app', // your frontend
-  "http://localhost:5173"
-  ,'http://localhost:5175/' // dev frontend
-];
+// const allowedOrigins = [
+//   'https://vercel-admin.vercel.app',
+//   'https://vercel-frontend.vercel.app', // your frontend
+//   "http://localhost:5173"
+//   ,'http://localhost:5175/' // dev frontend
+// ];
 
-app.use(cors({
-  origin: 'https://vercel-frontend-eta-sandy.vercel.app',
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  credentials: true,
-}));
+// app.use(cors({
+//   origin: 'https://vercel-frontend-eta-sandy.vercel.app',
+//   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+//   credentials: true,
+// }));
 
 app.use(express.json());
 
