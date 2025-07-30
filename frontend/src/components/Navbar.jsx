@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="font-bold text-2xl">
 
           {/* naye fonts add karne hai  */}
-          BYTE<span className="text-blue-800">CART</span>
+          BELLO<span className="text-blue-800">CART</span>
 
 
 
