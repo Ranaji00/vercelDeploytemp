@@ -22,7 +22,7 @@ const allowedOrigins = [
 ];
 
 app.use(cors({
-  origin: true,
+  origin: 'https://vercel-frontend-eta-sandy.vercel.app',
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true,
 }));
