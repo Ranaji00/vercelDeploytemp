@@ -8,34 +8,43 @@ import productRouter from "./routes/productRoute.js";
 import cartRouter from "./routes/cartRoute.js";
 import orderRouter from "./routes/orderRoute.js";
 
-// import { seedProducts } from "./seedProducts.js"; // import the seed function
-
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 5000;
 
+// // ✅ Configure CORS
+const allowedOrigins = [
+  'https://vercel-admin-puce.vercel.app',
+  'https://vercel-frontend-six-silk.vercel.app', // your frontend
+  "http://localhost:5173"
+  ,'http://localhost:5175/' // dev frontend
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true,
+}));
+
+app.use(express.json());
+
+// Routes
+app.use("/api/user", userRouter);
+app.use("/api/product", productRouter);
+app.use("/api/cart", cartRouter);
+app.use("/api/order", orderRouter);
+
+app.get("/", (req, res) => {
+  res.send("API WORKING");
+});
+
+// Start server
 async function startServer() {
   await connectDB();
   await connectCloudinary();
-  // await seedProducts();  // seed fixed products after DB connection
-
-  //Middlewares
-  app.use(express.json());
-  app.use(cors());
-
-  //API endpoints
-  app.use("/api/user", userRouter);
-  app.use("/api/product", productRouter);
-  app.use("/api/cart", cartRouter);
-  app.use("/api/order", orderRouter);
-
-  app.get("/", (req, res) => {
-    res.send("API WORKING");
-  });
-
   app.listen(port, () => {
-    console.log(`Server started on http://localhost:${port} ❤️`);
+    console.log(`Server started on http://localhost:${port} 🚀`);
   });
 }
 
