@@ -16,15 +16,15 @@ const BestSeller = () => {
   }, [products]);
 
   return (
-    <div className="my-10">
-      <div className="text-center text-3xl py-8">
+    <div className="my-10 ">
+      <div className="text-center text-3xl py-10">
         <Title text1={"BEST"} text2={"SELLERS"} />
         <p className="w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600">
           BestSelling, Premium & Asthetic items by Our Trusted Dealers
         </p>
       </div>
 
-      <div className="flex overflow-x-scroll gap-2 ">
+      <div className="flex overflow-x-scroll gap-2 py-10 ">
         {bestSeller.map((item, i) => (
           <ProductItem
             id={item._id}
