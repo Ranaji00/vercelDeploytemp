@@ -34,9 +34,7 @@ Byte Craft is a full-featured e-commerce platform built using the MERN stack.
 ## Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/Imtiaz4530/Forever
-   ```
+
 2. Install dependencies for the frontend:
 
    ```bash
