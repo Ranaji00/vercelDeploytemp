@@ -1,6 +1,6 @@
-# ByteCraft E-commerce Website
+# ByteCart E-commerce Website
 
-Byte Craft is a full-featured e-commerce platform built using the MERN stack.
+Byte Cart is a full-featured e-commerce platform built using the MERN stack.
 
 ## Features
 
