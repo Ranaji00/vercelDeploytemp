@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Bitcount+Prop+Single:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 a.active hr {
   display: block;
+}
+
+.game{
+  font-family:"Bitcount prop Single" ,Outfit;
+  /* font-weight: 500; */
+  
 }
 
 * {
@@ -22,9 +28,14 @@ a.active hr {
   display: none;
 }
 
-@media (max-width: 640px) {
-  a.active {
-    background-color: black;
-    color: white;
-  }
+
+.strk {
+  position: relative;
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: blue;
 }
+
+

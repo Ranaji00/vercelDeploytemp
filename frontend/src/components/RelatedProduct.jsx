@@ -33,6 +33,7 @@ const RelatedProduct = ({ category, subCategory }) => {
             id={item._id}
             image={item.image}
             name={item.name}
+            description={item.description}
             price={item.price}
           />
         ))}

@@ -27,19 +27,21 @@ const Product = () => {
       <div className="flex gap-12 sm:gap-12 flex-col sm:flex-row">
         {/* PRODUCT IMAGES */}
         <div className="flex-1 flex flex-col-reverse gap-3 sm:flex-row">
-          <div className="flex sm:flex-col overflow-x-auto sm:overflow-y-scroll justify-between sm:justify-normal sm:w-[18.7%] w-full">
+          <div className="flex  sm:flex-col overflow-x-auto sm:overflow-y-scroll justify-between sm:justify-normal sm:w-[18.7%] w-full">
             {productData.image.map((item, i) => (
               <img
                 src={item}
                 key={i}
-                className="w-[24%] sm:w-full sm:mb-3 flex-shrink-0 cursor-pointer"
+                className="w-[24%]  shadow-xl shadow-black sm:w-full sm:mb-3 flex-shrink-0 cursor-pointer"
                 alt={`product-img-${i}`}
                 onClick={() => setImage(item)}
               />
+              
             ))}
           </div>
-          <div className="w-full sm:w-[80%]">
-            <img src={image} className="w-full h-auto" alt="selected-product" />
+
+          <div className="w-[28rem] h-[32rem] shadow-xl  border-black shadow-black flex justify-center sm:w-[80%]">
+            <img src={image} className="w-[27rem] object-contain" alt="selected-product" />
           </div>
         </div>
 
@@ -58,12 +60,13 @@ const Product = () => {
           <p className="mt-5 text-3xl font-medium">
             {currency}
             {productData.price}
+            <span className="ml-6 line-through text-zinc-500">{currency}{productData.price-134}</span>
           </p>
 
           {/* Add to Cart / Quantity Controls */}
           {quantity === 0 ? (
             <button
-              className="bg-[#054895] text-white px-8 py-3 text-sm active:bg-gray-700 mt-6"
+              className="bg-[#054895]  hover:bg-white hover:text-[#054895] hover:shadow-2xl hover:border-zinc-400 hover:border-2 hover:shadow-black text-white px-8  py-3 text-sm active:bg-gray-700 mt-6"
               onClick={() => addToCart(productData._id)}
             >
               ADD TO CART
@@ -91,7 +94,7 @@ const Product = () => {
               </div>
 
               <Link to={'/cart'}>
-                <button className="bg-[#054895] text-white px-8 py-3 text-sm active:bg-gray-700 ">
+                <button className="bg-[#054895]  hover:bg-white hover:text-[#054895] hover:shadow-2xl hover:border-zinc-400 hover:border-2 hover:shadow-black text-white px-8 py-3 text-sm active:bg-gray-700 ">
                   Buy Now
                 </button></Link>
             </div>

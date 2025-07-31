@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Home from "./pages/Home";
@@ -14,33 +14,34 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Verify from "./pages/Verify";
 import SearchBar from "./components/SearchBar";
-import { useState } from "react";
 
 const App = () => {
+  const location = useLocation(); // 👈 get current route
 
-  return (<>
-  
-  
-    <div className=" sm:px-[5vw] md:px-[7vw]  ">
-      <ToastContainer />
-      <Navbar />
-      <SearchBar   />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/collection" element={<Collection />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/product/:productId" element={<Product />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/place-order" element={<PlaceOrder />} />
-        <Route path="/orders" element={<Orders />} />
-        <Route path="/verify" element={<Verify />} />
-      </Routes>
-    </div>
+  // 👇 check if current path is login
+  const isLoginPage = location.pathname === "/login";
 
-      <Footer />
+  return (
+    <>
+      <div className=" z-30 relative ">
+        <ToastContainer />
+        
+        {!isLoginPage && <Navbar />}
+        {!isLoginPage && <SearchBar />}
 
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/collection" element={<Collection />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/product/:productId" element={<Product />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/place-order" element={<PlaceOrder />} />
+          <Route path="/orders" element={<Orders />} />
+          <Route path="/verify" element={<Verify />} />
+        </Routes>
+      </div>
     </>
   );
 };

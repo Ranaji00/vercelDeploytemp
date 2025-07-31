@@ -1,6 +1,7 @@
-// // mport React from 'react'
-// import { FaInstagram } from "react-icons/fa";
-// import { BsTwitterX } from "react-icons/bs";
+// mport React from 'react'
+import { FaInstagram } from "react-icons/fa6";
+import { FaMeta } from "react-icons/fa6";
+import { BsTwitterX } from "react-icons/bs";
 
 
 
@@ -48,9 +49,9 @@ const Footer = () => {
 
           <h1 className=' font-semibold py-4'>Follow me </h1>
           <div className='w-full flex justify-start gap-2 pb-4'>
-            {/* <FaMeta />
-                <FaInstagram />
-                <BsTwitterX /> */}
+            <FaMeta />
+            <FaInstagram />
+            <BsTwitterX />
 
           </div>
 

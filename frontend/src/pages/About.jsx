@@ -19,23 +19,47 @@ const About = () => {
         />
         <div className="flex flex-col justify-center gap-6 md:w-2/4 text-gray-600">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-            quidem culpa sapiente necessitatibus similique, quaerat nisi fugiat
-            at officiis tempora laboriosam ipsam iusto? Veritatis illum ipsum
-            nihil delectus deserunt voluptates, officia nemo nulla aspernatur
-            laboriosam.
+            At <strong>ByteCart</strong>, we believe the future belongs to those who innovate—and we’re here to put the latest tech in your hands. Born from a passion for gadgets and a love for seamless technology, ByteCart is your one-stop online shop for cutting-edge electronics that elevate everyday life.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta a
-            doloremque vitae consectetur, quas earum voluptatum nobis itaque
-            veritatis, ut ipsam eius sed ab fugiat.
+            Whether you're a tech enthusiast, a professional in need of powerful tools, or someone just looking for smart lifestyle upgrades, ByteCart delivers trusted gadgets at unbeatable prices—with speed, quality, and satisfaction guaranteed.
+          </p>
+
+          <p>
+            We handpick products based on performance, reliability, and user experience, ensuring that every item on our platform adds real value to your digital life.
           </p>
 
           <b className="text-gray-800">Our Mission</b>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            eius officia fugit sequi libero possimus temporibus commodi
-            doloremque omnis saepe.
+            Our mission is simple:
+            To make the latest and greatest gadgets accessible to everyone, by combining affordability, speed, and support in one seamless shopping experience.
+
+
+            <ul className="list-disc pl-5">
+              We’re committed to:
+              <li>
+                Curating the best in consumer tech
+              </li>
+              <li>
+                Providing fast and secure delivery
+              </li>
+              <li>
+                Offering excellent customer service
+              </li>
+              <li>
+                Join the ByteCart movement—where tech meets trust.
+              </li>
+              <li>
+                Promoting innovation and digital empowerment
+              </li>
+
+
+
+
+
+
+            </ul>
+
           </p>
         </div>
       </div>

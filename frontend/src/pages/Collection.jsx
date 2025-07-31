@@ -16,7 +16,7 @@ import camera from "../assets/camtp.png";
 
 const Collection = () => {
   const { products, search, showSearch } = useContext(ShopContext);
-  const [colname , setcolname] =useState('Collection');
+  const [colname , setcolname] =useState('Gadgets');
 
   const [showFilter, setShowFilter] = useState(false);
   const [filterProducts, setFilterProducts] = useState([]);
@@ -137,7 +137,8 @@ const Collection = () => {
             
             {categoryOptions.map(({ name, img }) => {
               const isSelected = category === name;
-              return (
+              return (<div className="flex flex-col gap-4 justify-center items-center"  >
+              <span>{name}</span>
 
                 <img
                   key={name}
@@ -153,6 +154,10 @@ const Collection = () => {
 
                   title={name}
                 />
+
+                
+                
+                </div>
               );
             })}
           </div>
@@ -211,7 +216,7 @@ const Collection = () => {
           {/* PRODUCT SORT */}
           <select
             onChange={(e) => setSortType(e.target.value)}
-            className="border-2 border-gray-300 text-sm px-2"
+            className="border-2 mt-8 border-gray-300 text-sm px-2"
             >
             <option value="relevant">Sort by: Relevant</option>
             <option value="low-high">Sort by: Low to High</option>
@@ -227,6 +232,7 @@ const Collection = () => {
             id={item._id}
             image={item.image}
             name={item.name}
+            description={item.description}
             price={item.price}
             />
           ))}

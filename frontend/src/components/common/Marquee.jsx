@@ -6,12 +6,16 @@ import canon from '../../assets/canon.png'
 import sony from '../../assets/sony.png'
 import samsung from '../../assets/samsung.png'
 import hp from '../../assets/hp.png'
+import Title from "../Title";
 
 const Marquee = () => {
     return (<>
 
+    <div className=" w-full text-center md:text-4xl mt-16 text-2xl">
+       <Title text1={"Our Trusted"} text2={"Partners"} />
+    </div>
         
-        <div className="overflow-hidden bg-white py-4 w-full">
+        <div className="overflow-hidden bg-white  w-full">
 
             
             <motion.div
