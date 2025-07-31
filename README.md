@@ -84,4 +84,21 @@ Feel free to open issues or submit pull requests to contribute to this project!
 ## Screenshots
 
 ### FRONTEND
+![Homepage](./frontend/public/)
+![Collections](./frontend/public/)
+![Login](./frontend/public/)
+![Cart](./frontend/public/)
+![Product Description](./frontend/public/)
+![Cart with add products](./frontend/public/)
+![Payment](./frontend/public/)
+![Stripe](./frontend/public/)
+![orders history](./frontend/public/)
+
+### Admin Dashboard
+
+![Login](./frontend/public/)
+![Add Product](./frontend/public/)
+![Lists](./frontend/public/)
+![Orders](./frontend/public/)
+
 
