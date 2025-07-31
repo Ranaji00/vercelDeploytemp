@@ -22,7 +22,7 @@ const LatestCollection = () => {
       </div>
 
       {/* RENDERING PRODUCT */}
-      <div className="flex overflow-x-scroll gap-2">
+      <div className="flex overflow-x-scroll py-6 md:py-8 gap-2">
         {latestProduct.map((item, index) => (
           <ProductItem
 

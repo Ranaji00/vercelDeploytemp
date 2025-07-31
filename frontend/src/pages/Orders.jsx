@@ -3,6 +3,7 @@ import { ShopContext } from "../context/ShopContext";
 import Title from "../components/Title";
 import axios from "axios";
 import { toast } from "react-toastify";
+import Footer from "../components/Footer";
 
 const Orders = () => {
   const { backendUrl, token, currency } = useContext(ShopContext);
@@ -58,7 +59,7 @@ const Orders = () => {
     }
   }, [token]);
 
-  return (
+  return (<>
     <div className="border-t pt-16 px-4">
       <div className="text-2xl mb-6">
         <Title text1={"MY"} text2={"ORDERS"} />
@@ -115,6 +116,10 @@ const Orders = () => {
         ))
       )}
     </div>
+    <Footer/>
+
+
+</>
   );
 };
 

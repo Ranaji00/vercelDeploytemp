@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
 import { assets } from "../assets/assets";
 import RelatedProduct from "../components/RelatedProduct";
+import Footer from "../components/Footer";
 
 const Product = () => {
   const { productId } = useParams();
@@ -21,18 +22,20 @@ const Product = () => {
   // Get current quantity in cart for this product
   const quantity = cartItems[productId] || 0;
 
-  return productData ? (
-    <div className="border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100">
+  return<> {productData ? ( 
+
+    
+    <div className="border-t-2  border-black pt-10 transition-opacity ease-in w-screen duration-500 opacity-100">
       {/* PRODUCT SECTION */}
       <div className="flex gap-12 sm:gap-12 flex-col sm:flex-row">
         {/* PRODUCT IMAGES */}
         <div className="flex-1 flex flex-col-reverse gap-3 sm:flex-row">
-          <div className="flex  sm:flex-col overflow-x-auto sm:overflow-y-scroll justify-between sm:justify-normal sm:w-[18.7%] w-full">
+          <div className="flex  h-[12rem] md:h-[24rem] border-blue-500 sm:flex-col overflow-x-scroll md:overflow-y-scroll justify-between sm:justify-normal sm:w-[18.7%] w-full">
             {productData.image.map((item, i) => (
               <img
                 src={item}
                 key={i}
-                className="w-[24%]  shadow-xl shadow-black sm:w-full sm:mb-3 flex-shrink-0 cursor-pointer"
+                className="md:w-[13rem]   border-green-500 object-contain shadow-xl shadow-black sm:w-full sm:mb-3 flex-shrink-0 cursor-pointer"
                 alt={`product-img-${i}`}
                 onClick={() => setImage(item)}
               />
@@ -40,8 +43,8 @@ const Product = () => {
             ))}
           </div>
 
-          <div className="w-[28rem] h-[32rem] shadow-xl  border-black shadow-black flex justify-center sm:w-[80%]">
-            <img src={image} className="w-[27rem] object-contain" alt="selected-product" />
+          <div className="md:w-[28rem] h-[24rem] shadow-xl  border-black shadow-black flex justify-center sm:w-[80%]">
+            <img src={image} className="mdw-[24rem] object-contain" alt="selected-product" />
           </div>
         </div>
 
@@ -141,7 +144,12 @@ const Product = () => {
     </div>
   ) : (
     <div className="opacity-0">Loading...</div>
-  );
+    
+  )}
+  
+  <Footer/>
+  
+  </>
 };
 
 export default Product;

@@ -26,7 +26,7 @@ const RelatedProduct = ({ category, subCategory }) => {
         <Title text1={"RELATED"} text2={"PRODUCTS"} />
       </div>
 
-      <div className="grid grid-col-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 gap-y-6">
+      <div className="flex flex-wrap overflow-y-scroll md:overflow-auto  h-[50rem] md:h-fit py-8 border-red-800 justify-center gap-8">
         {related.map((item, i) => (
           <ProductItem
             key={i}
