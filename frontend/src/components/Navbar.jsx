@@ -66,7 +66,7 @@ const Navbar = () => {
           <p>ABOUT</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
-        <NavLink to="/contact" target="_blank" className="flex flex-col items-center gap-1">
+        <NavLink to="/contact"  className="flex flex-col items-center gap-1">
           <p>CONTACT</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
@@ -76,7 +76,7 @@ const Navbar = () => {
       <div className=" ">
 
         <div className="flex items-center gap-6">
-          <NavLink to={"https://ecommerce-project-six-umber.vercel.app/"} target="_blank" className="text-xs hidden md:flex px-2 py-3 rounded-lg hover:text-white hover:bg-gray-700 flex-col  justify-center  border-2 items-center gap-1">
+          <NavLink to={"https://ecommerce-project-six-umber.vercel.app/"} target="_blank" className="text-xs hidden md:flex px-2 py-3 rounded-lg border-zinc-400 hover:text-white hover:bg-[#054895] text-[#054895] flex-col  justify-center  border-2 items-center gap-1">
               <p>Admin Panel</p>
               <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
             </NavLink>

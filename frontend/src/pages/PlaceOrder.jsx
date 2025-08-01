@@ -109,7 +109,7 @@ const PlaceOrder = () => {
           break;
 
         case "razorpay":
-          toast.info("Razorpay payment is not yet implemented.");
+          toast.info("Razorpay Server is Down You can Choose COD or Stripe for Payments.");
           break;
 
         default:
@@ -238,18 +238,18 @@ const PlaceOrder = () => {
           <div className="flex gap-3 flex-col lg:flex-row">
             <div
               onClick={() => setMethod("stripe")}
-              className={`flex items-center gap-3 border p-2 px-3 cursor-pointer ${method === "stripe" ? "border-green-500" : ""
+              className={`flex border-2  items-center gap-3  p-2 px-3 cursor-pointer ${method === "stripe" ? "border-green-600" : ""
                 }`}
             >
               <p
-                className={`min-w-3.5 h-3.5 border rounded-full ${method === "stripe" ? "bg-green-400" : ""
+                className={`min-w-3.5  h-3.5 border rounded-full ${method === "stripe" ? "bg-green-400" : ""
                   }`}
               ></p>
-              <img src={assets.stripe_logo} className="h-5 mx-4" alt="Stripe" />
+              <img src={assets.stripe_logo} className="h-5   mx-4" alt="Stripe" />
             </div>
             <div
               onClick={() => setMethod("razorpay")}
-              className={`flex items-center gap-3 border p-2 px-3 cursor-pointer ${method === "razorpay" ? "border-green-500" : ""
+              className={`flex items-center gap-3 border-2 p-2 px-3 cursor-pointer ${method === "razorpay" ? "border-green-500" : ""
                 }`}
             >
               <p
@@ -260,7 +260,7 @@ const PlaceOrder = () => {
             </div>
             <div
               onClick={() => setMethod("cod")}
-              className={`flex items-center gap-3 border p-2 px-3 cursor-pointer ${method === "cod" ? "border-green-500" : ""
+              className={`flex items-center gap-3 border-2 p-2 px-3 cursor-pointer ${method === "cod" ? "border-green-500" : ""
                 }`}
             >
               <p

@@ -62,8 +62,8 @@ const Product = () => {
 
           <p className="mt-5 text-3xl font-medium">
             {currency}
-            {productData.price}
-            <span className="ml-6 line-through text-zinc-500">{currency}{productData.price-134}</span>
+            {(productData.price).toLocaleString("en-In")}
+            <span className="ml-6 line-through text-zinc-500">{currency}{(productData.price-134).toLocaleString("en-In")}</span>
           </p>
 
           {/* Add to Cart / Quantity Controls */}

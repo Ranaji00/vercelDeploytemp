@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 const Mainsection = () => {
     return (
 
-        <div className='w-full border-2 relative h-[36rem] z-0 flex justify-center items-center md:h-[40rem] py-2'>
+        <div className='w-full  relative h-[36rem] z-0 flex justify-center items-center md:h-[40rem] py-2'>
             <div className="grid grid-cols-3 grid-rows-3   md:grid-rows-2 h-full gap-2 mx-auto  py-4 ">
 
                 <Link to={'/collection'} className='border-2  border-blue-950 rounded-3xl  relative text-white bg-zinc-800  px-6 md:col-span-2 col-span-3 flex justify-between items-center'>

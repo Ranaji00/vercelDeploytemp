@@ -201,24 +201,24 @@ const Login = () => {
 
         <div className="w-full flex  flex-col gap-2 justify-between text-xs mt-4">
           <p className="cursor-pointer flex gap-2 ">
-            <input className="w-3" required type="checkbox"></input>
-            <span className="">
+              <input id="ck1"  className="w-3" required type="checkbox"></input>
+              <label htmlFor="ck1" className="text-white">
 
-              I hereby agree yours all T & C*
-            </span>
-            
+                I hereby agree yours all T & C*
+              </label>
+
             </p>
           {currentState === "Login" ? (
             <p
               onClick={() => setCurrentState("Sign Up")}
-              className="cursor-pointer border-black mt-2 underline hover:text-blue-900 text-[#054895]  text-xs  pb-2"
+              className="cursor-pointer border-black mt-2 underline text-blue-700 hover:text-blue-600   text-xs  pb-2"
             >
               Don't have any account click here ?
             </p>
           ) : (
             <p
               onClick={() => setCurrentState("Login")}
-              className="cursor-pointer border-black mt-2 underline hover:text-blue-900 text-[#054895]  text-xs"
+              className="cursor-pointer border-black mt-2 underline text-blue-700 hover:text-blue-600  text-xs"
             >
               Click here to Login {" "}
             </p>
@@ -293,28 +293,26 @@ const Login = () => {
         <div className="w-full flex-col justify-between px-12 text-sm mt-[8px]">
 
 
-          <p className="cursor-pointer flex gap-2 items-center ">
-            <input className="" required type="checkbox"></input>
-            <span className="">
-
-              I hereby agree yours all T & C*
-            </span>
-
-          </p>
+          <div className="cursor-pointer flex gap-2 items-center" >
+              <input type="checkbox" className="" id="ck223" required ></input>
+                <label className="text-white" htmlFor="ck223" >
+                  I hereby agree yours all T & C*
+                </label>
+            </div>
 
 
 
           {currentState === "Login" ? (
             <p
               onClick={() => setCurrentState("Sign Up")}
-              className="cursor-pointer border-black mt-2 underline hover:text-blue-900 text-[#054895]  text-xs  pb-2"
+              className="cursor-pointer border-black mt-2 underline text-blue-700 hover:text-blue-600  text-sm  pb-2"
             >
               Don't have any account click here ?
             </p>
           ) : (
             <p
               onClick={() => setCurrentState("Login")}
-              className="cursor-pointer border-black mt-2 underline hover:text-blue-900 text-[#054895]  text-xs"
+              className="cursor-pointer border-black mt-2 underline text-blue-700 hover:text-blue-600  text-sm"
             >
               Click here to Login {" "}
             </p>

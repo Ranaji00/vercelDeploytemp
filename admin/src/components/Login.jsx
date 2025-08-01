@@ -137,6 +137,19 @@ const Login = ({ setToken }) => {
           <button className="bg-[#054895] w-32 py-3 px-4 text-white hover:text-[#054895] text-lg hover:bg-white  hover:border-2 hover:border-zinc-500 font-light mt-4">
             Sign In
           </button>
+
+          <p className="w-full  text-xs text-white">
+
+            <span>
+            Email   : admin@gmail.com
+            </span>
+            <span>
+            Password : admin@123
+            </span>
+
+          </p>
+
+          
         </form>
 
       </div>
@@ -175,7 +188,7 @@ const Login = ({ setToken }) => {
           <input
             type="email"
             className="w-[80%] px-4 rounded-3xl outline-none py-2 border border-gray-800"
-            placeholder="Enter YourEmail"
+            placeholder="admin@gmail.com"
             required
             onChange={(e) => setEmail(e.target.value)}
             value={email}
@@ -183,7 +196,7 @@ const Login = ({ setToken }) => {
           <input
             type="password"
             className="w-[80%] rounded-3xl px-4 py-2 border border-gray-800"
-            placeholder="Enter Your Password"
+            placeholder="admin@123"
             required
             onChange={(e) => setPassword(e.target.value)}
             value={password}
@@ -206,6 +219,18 @@ const Login = ({ setToken }) => {
           <button className="bg-[#054895] w-64 py-4 px-8 text-white hover:text-[#054895] text-xl hover:bg-white  hover:border-2 hover:border-zinc-500 font-light mt-4">
             Sign In
           </button>
+
+
+          <p className="w-full flex flex-col px-4 py-4 text-xs text-zinc-200">
+            <span>Only This User is able to login in Admin Panel </span>
+            <span>
+            Email   : admin@gmail.com
+            </span>
+            <span>
+            Password : admin@123
+            </span>
+
+          </p>
         </form></div>
 
 

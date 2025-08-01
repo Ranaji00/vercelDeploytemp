@@ -74,7 +74,7 @@ const Orders = () => {
         orderData.map((item, i) => (
           <div
             key={i}
-            className="py-4 px-4 border-t border-2 shadow-2xl border-zinc-500  border-b text-gray-800 flex flex-col md:flex-row md:items-center md:justify-between gap-6"
+            className="py-4 px-4 border-t mb-4 border-2 shadow-2xl border-zinc-500  border-b text-gray-800 flex flex-col md:flex-row md:items-center md:justify-between  "
           >
             <div className="flex items-start gap-6 text-sm">
               {item.image && item.image.length > 0 ? (
@@ -89,7 +89,7 @@ const Orders = () => {
               <div>
                 <p className="sm:text-base font-medium">{item.name}</p>
                 <div className="flex items-center gap-3 mt-1 text-base text-gray-700">
-                  <p>{currency}{item.price}</p>
+                  <p>{currency}{(item.price).toLocaleString("en-In")}</p>
                   <p>Quantity: {item.quantity}</p>
                 </div>
                 <p className="mt-1 text-sm text-gray-500">

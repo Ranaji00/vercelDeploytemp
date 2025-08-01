@@ -1,9 +1,10 @@
 import { assets } from "../assets/assets";
+import Footer from "../components/Footer";
 import NewsletterBox from "../components/NewsletterBox";
 import Title from "../components/Title";
 
 const Contact = () => {
-  return (
+  return (<>
     <div>
       <div className="text-center text-2xl pt-10 border-t">
         <Title text1={"CONTACT"} text2={"US"} />
@@ -37,7 +38,10 @@ const Contact = () => {
       </div>
 
       <NewsletterBox />
+
     </div>
+
+    <Footer/></>
   );
 };
 
