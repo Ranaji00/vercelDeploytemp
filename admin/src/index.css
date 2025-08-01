@@ -25,12 +25,31 @@
 select,
 input,
 textarea {
-  border: 1px solid #c2c2c2;
-  outline-color: #8692c5;
+  border: 1px solid #000000;
+  /* outline-color: #000000; */
   border-radius: 4px;
 }
 
-.active {
-  background-color: #ffebf5;
-  border-color: #96a9c5;
+.Abtn{
+
+  transition: all;
+  transition-duration: 890ms;
+
 }
+
+.Cbtn:hover{
+
+
+  background-color: white;
+  border: 2px solid grey;
+  color: #054895;
+
+}
+.Cbtn{
+
+
+  color: white;
+  background-color: #054895;
+
+}
+

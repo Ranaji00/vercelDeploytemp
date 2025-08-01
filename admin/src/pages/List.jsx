@@ -12,7 +12,7 @@ const List = ({ token }) => {
     try {
       const response = await axios.get(`${backendUrl}/api/product/list`,);
       if (response.data.success) {
-        setList(response.data.products);
+        setList(response.data.products.reverse());
       } else {
         toast.error(response.data.message);
       }
@@ -49,11 +49,11 @@ const List = ({ token }) => {
 
   return (
     <>
-      <p className="mb-2">All Products Lists</p>
-      <div className="flex flex-col gap-2">
+      <p className="mb-2 text-zinc-800">All Products Lists</p>
+      <div className="flex  px-4 py-4 flex-col md:w-[70vw] w-[90vw] gap-3">
         {/* LIST TABLE TITLE */}
 
-        <div className="hidden md:grid grid-cols-[1fr_3fr_1fr_1fr_1fr] items-center py-1 px-2 border text-sm bg-gray-100">
+        <div className="hidden py-2 md:grid grid-cols-[1fr_2fr_1fr_1fr_1fr] items-center  px-2 border text-lg bg-gray-100">
           <b>Image</b>
           <b>Name</b>
           <b>Category</b>
@@ -66,20 +66,20 @@ const List = ({ token }) => {
         {list.map((item, i) => (
           <div
             key={i}
-            className="grid grid-cols-[1fr_3fr_1fr] md:grid-cols-[1fr_3fr_1fr_1fr_1fr] items-center gap-2 py-1 px-2 border text-sm"
+            className="grid gap-2 md:gap-3 border-zinc-500 shadow-2xl grid-cols-[1fr_1fr_1fr] md:grid-cols-[1fr_2fr_1fr_1fr_1fr] items-center  py-4 px-4 border text-sm"
           >
 
 
-            <img className="w-12 " src={item.image[0]} alt="" />
-            <p>{item.name}</p>
+            <img className="w-16 " src={item.image[0]} alt="" />
+            <p className="">{item.name}</p>
             <p>{item.category}</p>
             <p>
               {currency}
-              {item.price}
+              {(item.price).toLocaleString('en-IN')}
             </p>
             <p
               onClick={() => removeProduct(item._id)}
-              className="text-right md:text-center border-2 pl-32 cursor-pointer text-lg"
+              className="text-right col-span-2 justify-end md:col-span-1 md:text-center text-xl text-red-600 pl-36 cursor-pointer"
             >
               <RiDeleteBin5Line/>
             </p>

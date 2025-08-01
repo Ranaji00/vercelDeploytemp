@@ -4,6 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { backendUrl, currency } from "../App";
 import { assets } from "../assets/assets";
+import parcelimg from '../assets/parcel.png'
 
 const Order = ({ token }) => {
   const [orders, setOrders] = useState([]);
@@ -36,7 +37,7 @@ const Order = ({ token }) => {
     try {
       const res = await axios.post(
         // backendUrl + "/api/order/status",
-        `${backendUrl}/api/order/remove`,
+        `${backendUrl}/api/order/status`,
         { orderId, status: e.target.value },
         { headers: { token } }
       );
@@ -58,13 +59,15 @@ const Order = ({ token }) => {
   return (
     <div>
       <h3>Order Page</h3>
+      
       <div>
         {orders.map((order, i) => (
           <div
             key={i}
             className="grid grid-cols-1 sm:grid-cols-[0.5fr_2fr_1fr] lg:grid-cols-[0.5fr_2fr_1fr_1fr_1fr] gap-3 items-start border-2 border-gray-200 p-5 md:p-8 my-3 md:my-4 text-xs sm:text-sm text-gray-700"
           >
-            <img src={assets.parcel_icon} className="w-12" alt="" />
+            <img src={parcelimg} className="w-12" alt="" />
+
             <div>
               <div>
                 {order.items.map((item, i) => {

@@ -60,7 +60,8 @@ const Orders = () => {
   }, [token]);
 
   return (<>
-    <div className="border-t pt-16 px-16 pb-16">
+    <div className="border-t h-[100vh] pt-16 px-16 pb-16">
+      
       <div className="text-2xl mb-6">
         <Title text1={"MY"} text2={"ORDERS"} />
       </div>
@@ -73,7 +74,7 @@ const Orders = () => {
         orderData.map((item, i) => (
           <div
             key={i}
-            className="py-4 border-t border-b text-gray-700 flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+            className="py-4 px-4 border-t border-2 shadow-2xl border-zinc-500  border-b text-gray-800 flex flex-col md:flex-row md:items-center md:justify-between gap-6"
           >
             <div className="flex items-start gap-6 text-sm">
               {item.image && item.image.length > 0 ? (

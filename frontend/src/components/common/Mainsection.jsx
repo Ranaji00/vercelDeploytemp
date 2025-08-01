@@ -20,7 +20,7 @@ const Mainsection = () => {
                         <p className=' font-medium text-xs md:text-xl w-[12rem]  text-zinc-300 md:w-96 '> Newly Lauched HeadPhone 20mm Driver, Latest BT ver-5.4 </p>
                     </div>
 
-                    <span className='absolute bottom-1 left-6 md:bottom-4 md:left-12  border-slate-900 hover:border-b-4 hover:border-t-slate-800 hover:border-t-2 px-2 py-1 rounded-xl hover:cursor-pointer   text-white text-xs md:text-lg font-bold'>Check it out</span>
+                    <span className='absolute bottom-1 left-6 md:bottom-4 md:left-12  border-zinc-500 hover:border-b-4 hover:border-t-zinc-700 hover:border-t-2 px-2 py-1 rounded-xl hover:cursor-pointer   text-white text-xs md:text-base font-bold'>Check it out</span>
 
                     <img className='md:w-80 w-36 object-left-top' src={headphone} />
                 </Link>
@@ -28,7 +28,7 @@ const Mainsection = () => {
                 <Link to={'/collection'} className='hidden md:block fixed md:relative '>
 
                     <img className=' w-full h-full   object-fit rounded-3xl' src={smartwatch} />
-                     <span className='absolute bottom-2 left-3 md:bottom-4 md:left-5 hover:border-b-2  hover:cursor-pointer   text-white md:text-md text-xs font-bold'>Best Smart Wacthes</span>
+                     <span className='absolute bottom-2 left-3 md:bottom-4 md:left-5 hover:border-b-2  hover:cursor-pointer   text-white md:text-lg text-xs font-bold'>Best Smart Wacthes</span>
                      <span className='absolute md:block hidden   md:bottom-4 md:right-10 text-xs md:text-sm  px-3 py-2 rounded-lg bg-zinc-800 hover:border-b-4 hover:border-b-zinc-400 hover:cursor-pointer   text-white text-md font-bold'>Shop now</span>
 
                 </Link>

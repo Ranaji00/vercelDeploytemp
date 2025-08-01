@@ -104,7 +104,7 @@ const Login = ({ setToken }) => {
 
 
           </div>
-       
+
           <input
             type="email"
             className="w-full px-4 rounded-3xl outline-none  py-2 border border-gray-800"
@@ -124,22 +124,22 @@ const Login = ({ setToken }) => {
 
           <div className="w-full flex  flex-col gap-2 justify-between text-xs mt-4">
             <p className="cursor-pointer flex gap-2 ">
-              <input className="w-3" required type="checkbox"></input>
-              <span className="">
+              <input id="ck1"  className="w-3" required type="checkbox"></input>
+              <label htmlFor="ck1" className="text-white">
 
                 I hereby agree yours all T & C*
-              </span>
+              </label>
 
             </p>
-            
+
           </div>
 
           <button className="bg-[#054895] w-32 py-3 px-4 text-white hover:text-[#054895] text-lg hover:bg-white  hover:border-2 hover:border-zinc-500 font-light mt-4">
             Sign In
           </button>
         </form>
-        
-        </div>
+
+      </div>
 
 
       {/* laptop */}
@@ -192,14 +192,15 @@ const Login = ({ setToken }) => {
           <div className="w-full flex-col justify-between px-12 text-sm mt-[8px]">
 
 
-            <p className="cursor-pointer flex gap-2 items-center ">
-              <input className="" required type="checkbox"></input>
-              <span className="">
 
-                I hereby agree yours all T & C*
-              </span>
+            <div className="cursor-pointer flex gap-2 items-center" >
+              <input type="checkbox" className="" id="ck223" required ></input>
+                <label className="text-white" htmlFor="ck223" >
+                  I hereby agree yours all T & C*
+                </label>
+            </div>
 
-            </p>
+
           </div>
 
           <button className="bg-[#054895] w-64 py-4 px-8 text-white hover:text-[#054895] text-xl hover:bg-white  hover:border-2 hover:border-zinc-500 font-light mt-4">

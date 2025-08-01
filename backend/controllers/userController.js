@@ -184,7 +184,9 @@ export const adminLogin = async (req, res) => {
       email === process.env.ADMIN_EMAIL &&
       password === process.env.ADMIN_PASSWORD
     ) {
-      const token = jwt.sign(email + password, process.env.JWT_SECRET);
+      const token = jwt.sign({ email }, process.env.JWT_SECRET);
+      // const token = jwt.sign(email + password, process.env.JWT_SECRET);
+
       res.json({ success: true, token });
     } else {
       res.json({
@@ -202,6 +204,7 @@ export const adminLogin = async (req, res) => {
 export const getUserInfo = async (req, res) => {
   try {
     const token = req.headers.token;
+     console.log("Request Headers:", req.headers.token);
 
     if (!token) {
       return res.status(401).json({ success: false, message: "Token missing" });

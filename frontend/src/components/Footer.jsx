@@ -13,8 +13,8 @@ const Footer = () => {
 
         <div>
           <h1 className='font-semibold  py-4'>News Letter</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dolor quas quam?</p>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p> We Provide Best Quality, Assured Gauranted Products</p>
+          <p> Our products are provided by Trusted Brands and Dealers </p>
 
 
 
@@ -24,9 +24,10 @@ const Footer = () => {
         <div className='ml-8' >
 
           <h1 className='py-4 font-semibold'>Shop</h1>
-          <div>Mens`s cate</div>
-          <div>Mens`s cate</div>
-          <div>Mens`s cate</div>
+          <div>Home</div>
+          <div>Gadgets</div>
+          <div>About Us</div>
+          <div>Contact</div>
 
 
 
@@ -48,9 +49,12 @@ const Footer = () => {
         <div className='ml-8' >
 
           <h1 className=' font-semibold py-4'>Follow me </h1>
-          <div className='w-full flex justify-start gap-2 pb-4'>
+          <div className='w-full flex  cursor-pointer justify-start gap-2 pb-4'>
             <FaMeta />
+            
+
             <FaInstagram />
+
             <BsTwitterX />
 
           </div>

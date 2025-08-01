@@ -6,10 +6,12 @@ import { FaUserCircle } from "react-icons/fa";
 import { ImCart } from "react-icons/im";
 import { IoLogOutSharp } from "react-icons/io5";
 import { ImCross } from "react-icons/im";
-import { IoHome } from "react-icons/io5";import { BsSmartwatch } from "react-icons/bs";
+import { IoHome } from "react-icons/io5"; import { BsSmartwatch } from "react-icons/bs";
 import { AiFillProduct } from "react-icons/ai";
 import { TfiComments } from "react-icons/tfi";
 import { FaMailBulk } from "react-icons/fa";
+import { RiAdminLine } from "react-icons/ri";
+
 
 
 
@@ -64,15 +66,20 @@ const Navbar = () => {
           <p>ABOUT</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
-        <NavLink to="/contact" className="flex flex-col items-center gap-1">
+        <NavLink to="/contact" target="_blank" className="flex flex-col items-center gap-1">
           <p>CONTACT</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
+
       </ul>
 
       <div className=" ">
 
         <div className="flex items-center gap-6">
+          <NavLink to="http://localhost:5174/" target="_blank" className="text-xs hidden md:flex px-2 py-3 rounded-lg hover:text-white hover:bg-gray-700 flex-col  justify-center  border-2 items-center gap-1">
+              <p>Admin Panel</p>
+              <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
+            </NavLink>
           {/* search gola */}
           <Link to={"/collection"}>
             <img
@@ -88,6 +95,7 @@ const Navbar = () => {
           {/* pofrile icon  */}
 
           <div className="group relative   ">
+            
             <img
               src={assets.profile_icon}
               className="md:w-6 transition-all duration-700  w-4 cursor-pointer"
@@ -181,7 +189,7 @@ const Navbar = () => {
             >
               <span className=" ">
                 <AiFillProduct />
-                
+
               </span >
               <span className="">GADGETS</span>
             </Link>
@@ -195,6 +203,7 @@ const Navbar = () => {
               </span >
               <span className="">ABOUT ME</span>
             </Link>
+            
             <Link
               onClick={() => setVisible(false)}
               to={"/contact"}
@@ -203,7 +212,18 @@ const Navbar = () => {
               <span className="">
                 <FaMailBulk />
               </span >
-              <span className="">CONTACT ME</span> 
+              <span className="">CONTACT ME</span>
+            </Link>
+
+            <Link
+              onClick={() => setVisible(false)}
+              to={"/contact"}
+              className="py-2 flex gap-4 items-center  pl-6 border"
+            >
+              <span className="panel link">
+                <RiAdminLine />
+              </span >
+              <span className="">ADMIN PANEL</span>
             </Link>
 
 
