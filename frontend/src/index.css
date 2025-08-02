@@ -4,15 +4,34 @@
 @tailwind components;
 @tailwind utilities;
 
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 a.active hr {
   display: block;
+  height: 3px;
+  width: 60px;
 }
+
+*::selection{
+     background-color: rgb(106, 140, 232);
+  color:rgb(255, 255, 255)
+}
+
+
+
 
 .game{
   font-family:"Bitcount prop Single" ,Outfit;
   /* font-weight: 500; */
   
 }
+
+
+
+
 
 * {
   font-family: Outfit;

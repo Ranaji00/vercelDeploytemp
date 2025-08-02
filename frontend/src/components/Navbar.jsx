@@ -11,6 +11,7 @@ import { AiFillProduct } from "react-icons/ai";
 import { TfiComments } from "react-icons/tfi";
 import { FaMailBulk } from "react-icons/fa";
 import { RiAdminLine } from "react-icons/ri";
+import Topbar from "./common/Topbar";
 
 
 
@@ -40,8 +41,10 @@ const Navbar = () => {
     setCartItems({});
   };
 
-  return (
-    <div className="flex relative z-10 md:px-16 item-center justify-between py-5 font-medium px-4 ">
+  return (<>
+  <Topbar/>
+  
+    <div className="flex mt-3 md:mt-4 relative z-10 md:px-16 item-center justify-between pb-2 font-medium px-4 ">
       <Link to={"/"}>
         <div className="font-bold text-2xl">
 
@@ -54,7 +57,7 @@ const Navbar = () => {
       </Link>
 
       <ul className="hidden sm:flex gap-5 text-sm text-gray-700">
-        <NavLink to="/" className="flex flex-col items-center gap-1">
+        <NavLink to="/" className=" flex flex-col items-center gap-1">
           <p>HOME</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
@@ -237,7 +240,7 @@ const Navbar = () => {
         {/* </div> */}
       </div>
 
-    </div>
+    </div></>
   );
 };
 

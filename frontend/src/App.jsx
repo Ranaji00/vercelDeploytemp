@@ -14,6 +14,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Verify from "./pages/Verify";
 import SearchBar from "./components/SearchBar";
+import Topbar from "./components/common/Topbar";
 
 const App = () => {
   const location = useLocation(); // 👈 get current route
@@ -23,8 +24,10 @@ const App = () => {
 
   return (
     <>
+    
       <div className=" z-30 relative ">
         <ToastContainer />
+        
         
         {!isLoginPage && <Navbar />}
         {!isLoginPage && <SearchBar />}

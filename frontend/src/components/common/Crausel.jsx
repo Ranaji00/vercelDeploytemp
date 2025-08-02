@@ -7,6 +7,7 @@ import crWatch from '../../assets/crWatch.jpg'
 import sonyhead from '../../assets/sonyhead.jpg'
 import iphone15 from '../../assets/iphone15.png'
 import macpro from '../../assets/macpro.jpg'
+import { Link } from 'react-router-dom'
 
 const Crausel = () => {
 
@@ -17,7 +18,7 @@ const Crausel = () => {
         slidesToShow: 1,         // number of visible slides
         slidesToScroll: 1,       // how many slides to scroll
         autoplay: true,
-        autoplaySpeed: 4000033
+        autoplaySpeed: 2200
     };
 
     return (<>
@@ -42,9 +43,9 @@ const Crausel = () => {
                             <h1 className='md:text-6xl text-xs  font-bold'>AURE SMART WATCH</h1>
                             <p className='md:text-5xl text-xs font-thin'>Cold Winter Solider Edition</p>
                             <div className='w-full flex justify-center'>
-                                <button className='mt-4 md:px-10 hover:cursor-pointer px-3  md:text-xl text-xs rounded-lg md:py-3 py-2 transition-all duration-[890] bg-[#166fb8] hover:bg-white hover:text-blue-700'>
+                                <Link to="/collection" className='mt-4 md:px-10 hover:cursor-pointer px-3  md:text-xl text-xs rounded-lg md:py-3 py-2 transition-all duration-[890] bg-[#166fb8] hover:bg-white hover:text-blue-700'>
                                     Check it out
-                                </button>
+                                </Link>
 
                             </div>
                         </div>
@@ -71,9 +72,9 @@ const Crausel = () => {
                             <h1 className='md:text-6xl text-xs  font-bold'>SONY HEAD PHONE</h1>
                             <p className='md:text-5xl text-xs font-thin'>Royal Rosy Edition - 786</p>
                             <div className='w-full flex justify-center'>
-                                <button className='mt-4 md:px-10 hover:cursor-pointer px-3  md:text-xl text-xs rounded-lg md:py-3 py-2 transition-all duration-[890] bg-[#491422] hover:bg-white hover:text-[#491422]'>
+                                <Link to="/collection" className='mt-4 md:px-10 hover:cursor-pointer px-3  md:text-xl text-xs rounded-lg md:py-3 py-2 transition-all duration-[890] bg-[#491422] hover:bg-white hover:text-[#491422]'>
                                     Check it out
-                                </button>
+                                </Link>
 
                             </div>
                         </div>
@@ -104,9 +105,9 @@ const Crausel = () => {
                             <h1 className='md:text-6xl text-xs  font-bold'>MAC BOOK 15 PRO</h1>
                             <p className='md:text-5xl text-xs font-thin'>Now Available in Celestial Black</p>
                             <div className='w-full flex justify-center'>
-                                <button className='mt-4 md:px-10 hover:cursor-pointer px-3  md:text-xl text-xs rounded-lg md:py-3 py-2 transition-all duration-[890] text-black bg-[#fcfdff] hover:bg-zinc-900 hover:text-[#fcfdff]'>
+                                <Link to="/collection" className='mt-4 md:px-10 hover:cursor-pointer px-3  md:text-xl text-xs rounded-lg md:py-3 py-2 transition-all duration-[890] text-black bg-[#fcfdff] hover:bg-zinc-900 hover:text-[#fcfdff]'>
                                     Check it out
-                                </button>
+                                </Link>
 
                             </div>
                         </div>
@@ -134,9 +135,9 @@ const Crausel = () => {
                             <h1 className='md:text-6xl text-xs  font-bold'>IPHONE 15 PRO</h1>
                             <p className='md:text-5xl text-xs font-thin'>Now Available in Slate Grey</p>
                             <div className='w-full flex justify-center'>
-                                <button className='mt-4 md:px-10 hover:cursor-pointer px-3  md:text-xl text-xs rounded-lg md:py-3 py-2 transition-all duration-[890] bg-[#3c434f] hover:bg-white hover:text-[#3c434f]'>
+                                <Link to="/collection"className='mt-4 md:px-10 hover:cursor-pointer px-3  md:text-xl text-xs rounded-lg md:py-3 py-2 transition-all duration-[890] bg-[#3c434f] hover:bg-white hover:text-[#3c434f]'>
                                     Check it out
-                                </button>
+                                </Link>
 
                             </div>
                         </div>
