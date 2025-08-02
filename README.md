@@ -88,21 +88,19 @@ Feel free to open issues or submit pull requests to contribute to this project!
 ## Screenshots
 
 ### FRONTEND
-![Homepage](./frontend/public/)
-![Collections](./frontend/public/)
-![Login](./frontend/public/)
-![Cart](./frontend/public/)
-![Product Description](./frontend/public/)
-![Cart with add products](./frontend/public/)
-![Payment](./frontend/public/)
-![Stripe](./frontend/public/)
-![orders history](./frontend/public/)
+![User Login Page ](./frontend/public/b0.jpg)
+![Homepage](./frontend/public/b1.jpg)
+![Collections](./frontend/public/b1b.jpg)
+![Payment gateway](./frontend/public/a3.jpg)
+![Product Description](./frontend/public/a0.jpg)
+![Cart with add products](./frontend/public/a1.jpg)
+![Stripe](./frontend/public/q1.jpg)
+![orders history](./frontend/public/e1.jpg)
 
 ### Admin Dashboard
 
-![Login](./frontend/public/)
-![Add Product](./frontend/public/)
-![Lists](./frontend/public/)
-![Orders](./frontend/public/)
-
+![Login Page](./frontend/public/ad4.jpg)
+![Add Product](./frontend/public/ad1.jpg)
+![Lists](./frontend/public/ad0)
+![Orders](./frontend/public/ad3)
 
