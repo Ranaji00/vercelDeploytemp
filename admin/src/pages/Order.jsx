@@ -112,7 +112,7 @@ const Order = ({ token }) => {
               <p>Date : {new Date(order.date).toLocaleString()}</p>
             </div>
             <p className="text-sm sm:text-[15px]">
-              {currency} {order.amount}
+              {currency} {(order.amount).toLocaleString("en-In")}
             </p>
 
             <select

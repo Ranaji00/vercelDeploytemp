@@ -97,7 +97,7 @@ const Product = () => {
               </div>
 
               <Link to={'/cart'}>
-                <button className="bg-[#054895]  hover:bg-white hover:text-[#054895] hover:shadow-2xl hover:border-zinc-400 hover:border-2 hover:shadow-black text-white px-8 py-3 text-sm active:bg-gray-700 ">
+                <button className="bg-[#054895]  hover:bg-white hover:text-[#054895] hover:shadow-2xl hover:border-zinc-400 hover:border-2 transition-all duration-[900] shadow-black text-white px-8 py-3 md:text-base text-sm">
                   Buy Now
                 </button></Link>
             </div>

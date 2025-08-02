@@ -67,7 +67,7 @@ const PlaceOrder = () => {
       const orderData = {
         address: formData,
         items: orderItems,
-        amount: getCartAmount() + delivery_fee,
+        amount: (getCartAmount() + delivery_fee),
       };
 
       switch (method) {
@@ -275,7 +275,7 @@ const PlaceOrder = () => {
 
           <div className="w-full text-end mt-8">
             <button
-              className="bg-black text-white px-16 py-3 text-sm"
+              className="bg-[#054895] hover:text-[#054895] transition-all duration-[890] hover:border-2 hover:bg-white border-zinc-500 text-white px-16 py-3 text-sm"
               type="submit"
             >
               PLACE ORDER

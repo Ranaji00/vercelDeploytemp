@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 //GLOBAL VARIABLES
-const currency = "usd";
+const currency = "inr";
 const deliveryCharges = 10;
 
 //GET WAY INITIALIZE
