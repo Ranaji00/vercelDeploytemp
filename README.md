@@ -89,26 +89,30 @@ Feel free to open issues or submit pull requests to contribute to this project!
 
 ### FRONTEND
 
- 
-  [user](./frontend/public/b0.jpg)
-  Homepage[](./frontend/public/b1.jpg)
+  ### User Login Page
+  [](./frontend/public/b0.jpg)
+ ### Homepage[](./frontend/public/b1.jpg)
   Collections
   [](./frontend/public/b1b.jpg)
-  Payment gateway
-  ![](./frontend/public/a3.jpg)
-  Product Description
-  ![](./frontend/public/a0.jpg)
-  Cart with add products
-  ![](./frontend/public/a1.jpg)
-  Stripe
-  ![](./frontend/public/q1.jpg)
-  orders history
-  ![](./frontend/public/e1.jpg)
+### Payment gateway
+  [](./frontend/public/a3.jpg)
+###  Product Description
+  [](./frontend/public/a0.jpg)
+###  Cart with add products
+  [](./frontend/public/a1.jpg)
+###  Stripe
+  [](./frontend/public/q1.jpg)
+###  orders history
+  [](./frontend/public/e1.jpg)
 
 ### Admin Dashboard
 
-![Login Page](./frontend/public/ad4.jpg)
-![Add Product](./frontend/public/ad1.jpg)
-![Lists](./frontend/public/ad0)
-![Orders](./frontend/public/ad3)
+  ### Login Page
+  [](./frontend/public/ad4.jpg)
+  ### Add Product
+  [](./frontend/public/ad1.jpg)
+  ### Lists
+  [](./frontend/public/ad0.jpg)
+  ### Orders
+  [](./frontend/public/ad3.jpg)
 
