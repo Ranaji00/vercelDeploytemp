@@ -89,10 +89,10 @@ Feel free to open issues or submit pull requests to contribute to this project!
 
 ### FRONTEND
 
-  ## User Login Page
-  [](./frontend/public/b0.jpg)
-  !Homepage[](./frontend/public/b1.jpg)
-  !Collections
+ 
+  [user](./frontend/public/b0.jpg)
+  Homepage[](./frontend/public/b1.jpg)
+  Collections
   [](./frontend/public/b1b.jpg)
   Payment gateway
   ![](./frontend/public/a3.jpg)
