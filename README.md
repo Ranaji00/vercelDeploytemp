@@ -107,10 +107,8 @@ Feel free to open issues or submit pull requests to contribute to this project!
 
 ### Admin Dashboard
 
-  ### Login Page
-  [](./frontend/public/ad4.jpg)
-  ### Add Product
-  [](./frontend/public/ad1.jpg)
+  ### Login Page[](./frontend/public/ad4.jpg)
+  ### Add Product[](./frontend/public/ad1.jpg)
   ### Lists
   [](./frontend/public/ad0.jpg)
   ### Orders
