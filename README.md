@@ -1,6 +1,6 @@
 # Project Live Link
 
-  - https://ecommerce-frontend-nu-tawny.vercel.app/
+  - https://vercel-frontend-eta-sandy.vercel.app/
 
 # ByteCart E-commerce Website 
 
