@@ -44,7 +44,7 @@ const Navbar = () => {
   return (<>
   <Topbar/>
   
-    <div className="flex mt-3 md:mt-4 relative z-10 md:px-16 item-center justify-between pb-2 font-medium px-4 ">
+    <div className="flex bg-black mt-3 md:mt-4 relative z-10 md:px-16 item-center justify-between pb-2 font-medium px-4 ">
       <Link to={"/"}>
         <div className="font-bold text-2xl">
 
